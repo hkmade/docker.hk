@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+MAINTAINER miles <hkmade@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
