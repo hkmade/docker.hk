@@ -1,4 +1,3 @@
-$ more Dockerfile
 # Wordpress docker image
 
 # Base OS image
