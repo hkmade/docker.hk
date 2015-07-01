@@ -10,8 +10,8 @@ RUN apt-get install -y mysql-server
 WORKDIR /etc/mysql
 RUN sed -i "s/127.0.0.1/0.0.0.0/g" my.cnf
 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+ADD mysql.entrypoint.sh /mysql.entrypoint.sh
+RUN chmod +x /mysql.entrypoint.sh
 EXPOSE 3306
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT /mysql.entrypoint.sh
